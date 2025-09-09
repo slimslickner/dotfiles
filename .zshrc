@@ -79,9 +79,6 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git mise pip pipenv python brew fzf fzf-tab )
 
-# activate mise
-eval "$(mise activate zsh)"
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
