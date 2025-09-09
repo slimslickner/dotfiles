@@ -1,3 +1,10 @@
+# This .zshrc file was created by oh-my-zsh.
+# It is source controlled using the setup below with the git alias `config` which was pulled from https://www.atlassian.com/git/tutorials/dotfiles.
+# git init --bare $HOME/.cfg
+# alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+# config config --local status.showUntrackedFiles no
+# echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.zshrc
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -17,7 +24,7 @@ ZSH_THEME="robbyrussell"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="true"
+# CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -70,7 +77,10 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git mise pip pipenv python brew fzf fzf-zsh-plugin )
+plugins=(git mise pip pipenv python brew fzf fzf-tab )
+
+# activate mise
+eval "$(mise activate zsh)"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,11 +113,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# activate mise
-eval "$(mise activate zsh)"
-
 # setup a config alias for tracking config level files in ~/
-alias config='/usr/bin/git --git-dir=/Users/timtickner/.cfg/ --work-tree=/Users/timtickner'
-
-# fzf setup
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
