@@ -11,4 +11,4 @@ echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $H
 
 This setup aliases `config` to `git`, so files can be added and committed using `config add .zshrc`, `config commit -m "init commit"`, etc.
 
-Currently, this is only tracking the oh-my-zsh .zshrc config.
+I currently use the built in MacOS Terminal with this theme: https://github.com/lysyi3m/macos-terminal-themes?tab=readme-ov-file#gruvbox-download
