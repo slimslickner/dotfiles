@@ -37,5 +37,9 @@ source <(fzf --zsh)
 # Set up zoxide to move between folders efficiently
 eval "$(zoxide init zsh)"
 
+# Activate mise
+echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
+
 # Set up the Starship prompt
 eval "$(starship init zsh)"
+eval "$(mise activate zsh)"
