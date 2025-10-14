@@ -1,5 +1,4 @@
-# Inspired from https://batsov.com/articles/2025/03/01/back-to-the-basics-zsh-without-oh-my-zsh/
-# Using Starship instead of oh-my-zsh
+# Using Starship (https://starship.rs)
 
 # Enable persistent history
 HISTFILE=~/.zsh_history
