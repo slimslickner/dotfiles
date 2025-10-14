@@ -38,8 +38,7 @@ source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 
 # Activate mise
-echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
+eval "$(mise activate zsh)"
 
 # Set up the Starship prompt
 eval "$(starship init zsh)"
-eval "$(mise activate zsh)"
