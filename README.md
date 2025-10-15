@@ -11,4 +11,13 @@ echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $H
 
 This setup aliases `config` to `git`, so files can be added and committed using `config add .zshrc`, `config commit -m "init commit"`, etc.
 
+To setup the submodules, like `fzf-tab`, do this:
+```zsh
+cd ~/.zsh_config/plugins/fzf-tab
+git pull origin master  # or whatever branch
+cd ~
+git add ~/.zsh_config/plugins/fzf-tab
+git commit -m "Update fzf-tab"
+```
+
 I currently use the built in MacOS Terminal with this theme: https://github.com/lysyi3m/macos-terminal-themes?tab=readme-ov-file#gruvbox-download
