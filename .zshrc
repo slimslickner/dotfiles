@@ -22,13 +22,6 @@ alias ls='ls -G'
 alias lsa='ls -lah'
 alias cd='z'
 alias cdi='zi'
-
-# setup a config alias for tracking config level files in ~/
-# this is source controlled using the setup below with the git alias `config` which was pulled from https://www.atlassian.com/git/tutorials/dotfiles.
-# git init --bare $HOME/.cfg
-# alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-# config config --local status.showUntrackedFiles no
-# echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.zshrc
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
 # Set up fzf key bindings and fuzzy completion
