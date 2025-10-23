@@ -20,4 +20,4 @@ git add ~/.zsh_config/plugins/fzf-tab
 git commit -m "Update fzf-tab"
 ```
 
-I currently use the built in MacOS Terminal with this theme: https://github.com/lysyi3m/macos-terminal-themes?tab=readme-ov-file#gruvbox-download
+Terminal themes can be found [here](https://github.com/mbadolato/iTerm2-Color-Schemes?tab=readme-ov-file#terminal-color-schemes).
