@@ -20,4 +20,4 @@ git add ~/.zsh_config/plugins/fzf-tab
 git commit -m "Update fzf-tab"
 ```
 
-Terminal themes can be found [here](https://github.com/mbadolato/iTerm2-Color-Schemes?tab=readme-ov-file#terminal-color-schemes).
+Terminal themes can be found [here](https://github.com/mbadolato/iTerm2-Color-Schemes?tab=readme-ov-file#terminal-color-schemes). Currently, I'm on Kanagawa Wave and Dragon depending on time of day.
