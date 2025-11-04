@@ -30,6 +30,9 @@ source <(fzf --zsh)
 # Set up fzf-tab
 source ~/.zsh_config/plugins/fzf-tab/fzf-tab.plugin.zsh
 
+# Set up venv-activation
+source ~/.zsh_config/plugins/venv-activation/venv-activation.plugin.zsh
+
 # Set up zoxide to move between folders efficiently
 eval "$(zoxide init zsh)"
 
