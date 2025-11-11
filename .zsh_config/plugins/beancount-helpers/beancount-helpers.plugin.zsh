@@ -1,0 +1,13 @@
+# Beancount environment variable
+  export BEANCOUNT_DIR="$HOME/Documents/Areas/Financial/Budgets/beancount_finance"
+  export MAIN_BEANCOUNT_FILE="main.bc"
+
+  # Function to run bean-check on main.bc
+  bch() {
+      local current_dir=$(pwd)
+      cd "$BEANCOUNT_DIR" || return 1
+      uv run bean-check $MAIN_BEANCOUNT_FILE "$@"
+      local exit_code=$?
+      cd "$current_dir" || return 1
+      return $exit_code
+  }

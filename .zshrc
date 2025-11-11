@@ -33,6 +33,9 @@ source ~/.zsh_config/plugins/fzf-tab/fzf-tab.plugin.zsh
 # Set up venv-activation
 source ~/.zsh_config/plugins/venv-activation/venv-activation.plugin.zsh
 
+# Set up beancount-helpers
+source ~/.zsh_config/plugins/beancount-helpers/beancount-helpers.plugin.zsh
+
 # Set up zoxide to move between folders efficiently
 eval "$(zoxide init zsh)"
 
@@ -41,3 +44,4 @@ eval "$(mise activate zsh)"
 
 # Set up the Starship prompt
 eval "$(starship init zsh)"
+export PATH="$HOME/.local/bin:$PATH"
