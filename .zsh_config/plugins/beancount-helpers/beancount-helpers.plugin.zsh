@@ -6,6 +6,7 @@
   bch() {
       local current_dir=$(pwd)
       cd "$BEANCOUNT_DIR" || return 1
+      echo "Running: uv run bean-check $MAIN_BEANCOUNT_FILE $@"
       uv run bean-check $MAIN_BEANCOUNT_FILE "$@"
       local exit_code=$?
       cd "$current_dir" || return 1
