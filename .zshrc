@@ -31,7 +31,7 @@ source <(fzf --zsh)
 source ~/.zsh_config/plugins/fzf-tab/fzf-tab.plugin.zsh
 
 # Set up venv-activation
-source ~/.zsh_config/plugins/venv-activation/venv-activation.plugin.zsh
+# source ~/.zsh_config/plugins/venv-activation/venv-activation.plugin.zsh
 
 # Set up beancount-helpers
 source ~/.zsh_config/plugins/beancount-helpers/beancount-helpers.plugin.zsh
