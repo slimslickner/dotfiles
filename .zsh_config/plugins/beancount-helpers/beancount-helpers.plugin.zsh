@@ -1,5 +1,5 @@
 # Beancount environment variable
-  export BEANCOUNT_DIR="$HOME/Documents/Areas/Financial/Budgets/beancount_finance"
+  export BEANCOUNT_DIR="$HOME/Documents/Areas/Financial/Budgets/Beancount"
   export MAIN_BEANCOUNT_FILE="main.bc"
 
   # Function to run bean-check on main.bc
