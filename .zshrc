@@ -8,6 +8,9 @@ SAVEHIST=100000
 setopt HIST_SAVE_NO_DUPS
 setopt INC_APPEND_HISTORY
 
+# Enable source highlighting in less with `source-highlight`
+export LESS='-R'
+
 # Move to directories without cd
 setopt autocd
 
@@ -36,11 +39,11 @@ source ~/.zsh_config/plugins/fzf-tab/fzf-tab.plugin.zsh
 # Set up beancount-helpers
 source ~/.zsh_config/plugins/beancount-helpers/beancount-helpers.plugin.zsh
 
-# Set up zoxide to move between folders efficiently
-eval "$(zoxide init zsh)"
-
 # Activate mise
 eval "$(mise activate zsh)"
+
+# Set up zoxide to move between folders efficiently
+eval "$(zoxide init zsh)"
 
 # Set up the Starship prompt
 eval "$(starship init zsh)"
