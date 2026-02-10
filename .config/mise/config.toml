@@ -1,0 +1,15 @@
+[tools]
+docker-cli = "latest"
+docker-compose = "latest"
+duckdb = "latest"
+go = "latest"
+node = "latest"
+python = "3.11"
+ruby = "latest"
+ruff = "latest"
+ty = "latest"
+uv = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["python"]
+python.uv_venv_auto = true
