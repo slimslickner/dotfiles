@@ -27,6 +27,8 @@ alias cd='z'
 alias cdi='zi'
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
+eval "$(_BEANSCHEDULE_COMPLETE=zsh_source beanschedule)"
+
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
@@ -42,9 +44,14 @@ source ~/.zsh_config/plugins/beancount-helpers/beancount-helpers.plugin.zsh
 # Activate mise
 eval "$(mise activate zsh)"
 
-# Set up zoxide to move between folders efficiently
-eval "$(zoxide init zsh)"
-
 # Set up the Starship prompt
 eval "$(starship init zsh)"
 export PATH="$HOME/.local/bin:$PATH"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/timtickner/.lmstudio/bin"
+# End of LM Studio CLI section
+
+
+# Set up zoxide to move between folders efficiently
+eval "$(zoxide init zsh)"
