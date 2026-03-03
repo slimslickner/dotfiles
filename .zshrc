@@ -23,11 +23,10 @@ alias la='ls -lAh'
 alias ll='ls -lh'
 alias ls='ls -G'
 alias lsa='ls -lah'
+alias - -="cd -"
 alias cd='z'
 alias cdi='zi'
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
-
-eval "$(_BEANSCHEDULE_COMPLETE=zsh_source beanschedule)"
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
