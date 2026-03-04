@@ -21,3 +21,10 @@ git commit -m "Update fzf-tab"
 ```
 
 Terminal themes can be found [here](https://github.com/mbadolato/iTerm2-Color-Schemes?tab=readme-ov-file#terminal-color-schemes). Currently, I'm on Kanagawa Wave and Dragon depending on time of day.
+
+## Tool Management Philosophy
+
+Tools are split between two managers depending on their nature:
+
+- **Homebrew** — system utilities that you install once and forget: `fzf`, `zoxide`, `starship`, etc. These don't need version pinning and aren't project-specific.
+- **mise** — versioned runtimes and language toolchains: Python, Node, etc. Anything where you might need to switch versions per project.
