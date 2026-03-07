@@ -7,8 +7,27 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent_buffer_font_size": 12.0,
+  "agent_ui_font_size": 15.0,
+  "agent_servers": {
+    "claude": {
+      "favorite_config_option_values": {
+        "model": [
+          "default"
+        ]
+      }
+    }
+  },
+  "icon_theme": "Zed (Default)",
+  "edit_predictions": {
+    "sweep": {
+      "privacy_mode": true
+    },
+    "provider": "ollama"
+  },
+  "vim_mode": false,
   "format_on_save": "on",
-  "disable_ai": true,
+  "disable_ai": false,
   "redact_private_values": true,
   "telemetry": {
     "diagnostics": false,
@@ -19,8 +38,8 @@
   "buffer_font_size": 12.0,
   "theme": {
     "mode": "system",
-    "light": "Kanagawa Wave",
-    "dark": "Kanagawa Dragon",
+    "light": "One Light",
+    "dark": "One Dark",
   },
   "languages": {
     "Python": {
