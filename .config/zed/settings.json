@@ -7,23 +7,26 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "buffer_font_family": ".ZedMono",
+  "autosave": "off",
+  "calls": {
+    "mute_on_join": true,
+  },
   "agent_buffer_font_size": 12.0,
   "agent_ui_font_size": 15.0,
   "agent_servers": {
     "claude": {
       "favorite_config_option_values": {
-        "model": [
-          "default"
-        ]
-      }
-    }
+        "model": ["default"],
+      },
+    },
   },
   "icon_theme": "Zed (Default)",
   "edit_predictions": {
     "sweep": {
-      "privacy_mode": true
+      "privacy_mode": true,
     },
-    "provider": "ollama"
+    "provider": "ollama",
   },
   "vim_mode": false,
   "format_on_save": "on",
@@ -50,6 +53,10 @@
         "ruff",
         "!basedpyright",
       ],
+    },
+    "Beancount": {
+      "tab_size": 2,
+      "hard_tabs": false,
     },
   },
 }
