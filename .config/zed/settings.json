@@ -15,11 +15,12 @@
   "agent_buffer_font_size": 12.0,
   "agent_ui_font_size": 15.0,
   "agent_servers": {
-    "claude": {
-      "favorite_config_option_values": {
-        "model": ["default"],
-      },
+    "claude-acp": {
+      "type": "registry"
     },
+    "opencode": {
+      "type": "registry"
+    }
   },
   "icon_theme": "Zed (Default)",
   "edit_predictions": {
