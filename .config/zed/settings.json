@@ -31,7 +31,6 @@
   "vim_mode": false,
   "format_on_save": "on",
   "disable_ai": false,
-  "redact_private_values": true,
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
