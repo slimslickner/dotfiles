@@ -17,7 +17,7 @@ setopt autocd
 # Initialize completion
 autoload -U compinit; compinit
 
-# The most important aliases ever (the only thing I borrowed from OMZ)
+# Aliases 
 alias l='ls -lah'
 alias la='ls -lAh'
 alias ll='ls -lh'
@@ -27,6 +27,8 @@ alias - -="cd -"
 alias cd='z'
 alias cdi='zi'
 alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+alias vim='nvim'
+alias v='nvim'
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
