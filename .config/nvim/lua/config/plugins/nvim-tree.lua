@@ -3,14 +3,6 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
     require("nvim-tree").setup()
-  end,
-}
-
-return {
-  "nvim-tree/nvim-tree.lua",
-  dependencies = { "nvim-tree/nvim-web-devicons" },
-  config = function()
-    require("nvim-tree").setup()
 
     -- auto-open when nvim is opened with a directory
     local api = require("nvim-tree.api")
