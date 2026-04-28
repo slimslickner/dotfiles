@@ -45,3 +45,6 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Set up zoxide to move between folders efficiently
 eval "$(zoxide init zsh)"
+
+# Deactivate Ollama Cloud features
+export OLLAMA_NO_CLOUD=1

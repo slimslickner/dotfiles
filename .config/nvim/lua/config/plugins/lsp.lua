@@ -1,13 +1,12 @@
 return {
   "neovim/nvim-lspconfig",
   config = function()
-    local lspconfig = require("lspconfig")
-
-    lspconfig.beancount.setup({
+    vim.lsp.config("beancount", {
       init_options = {
         journal_file = "/path/to/your/main.beancount",
       },
     })
+    vim.lsp.enable("beancount")
 
     -- so nvim recognizes .beancount and .bean files
     vim.filetype.add({
